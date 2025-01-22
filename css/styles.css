@@ -615,6 +615,14 @@ progress {
   object-position: center;
 }
 
+.write-up-image {
+  float: right;
+  max-width: 50%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
 .img-fixed {
   max-width: 100%;
   height: 400px;
