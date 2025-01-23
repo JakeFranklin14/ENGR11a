@@ -616,12 +616,10 @@ progress {
 }
 
 .write-up-image {
-  float: right;
   max-width: 50%;
   height: auto;
   overflow: hidden;
   position: relative;
-  margin: 10px;
   border-radius: 10px;
 }
 
