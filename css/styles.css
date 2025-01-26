@@ -621,6 +621,7 @@ progress {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
+  margin-left: 20px;
 }
 
 .img-fixed {
