@@ -624,6 +624,20 @@ progress {
   margin-left: 20px;
 }
 
+.resumeImage1 {
+  float: right;
+  margin-top: 5px;
+}
+
+.resumeImage2 {
+  float: right;
+}
+
+.resumeImage3 {
+  float: right;
+  margin-top: 30px;
+}
+
 .img-fixed {
   max-width: 100%;
   height: 400px;
