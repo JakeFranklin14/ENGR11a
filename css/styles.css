@@ -619,7 +619,6 @@ progress {
   max-width: 50%;
   height: auto;
   overflow: hidden;
-  position: relative;
   border-radius: 10px;
   margin-left: 20px;
 }
