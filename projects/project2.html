@@ -16,6 +16,40 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
+
+        <style>
+            /* Fullscreen Modal */
+            .image-modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-content {
+                max-width: 90%;
+                max-height: 90%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+
+            .close-btn {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -71,7 +105,7 @@
                                                     <!-- The Idea -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right; margin-bottom: 10px;" src="../assets/Project2/SketchCentaur.jpeg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-bottom: 10px;" src="../assets/Project2/SketchCentaur.jpeg" alt="..." />
                                                             The first step of this assignment was to find 2-3 existing models that 
                                                             I wanted to combine into one. I thought it would be fun to create a centaur! 
                                                             The first model I found was the horse <a href="https://www.thingiverse.com/thing:2785163">(thingaverse model 2785163)</a>. 
@@ -84,7 +118,7 @@
                                                     <!-- Horse No Head -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/Project2/HorseNoHead.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/Project2/HorseNoHead.png" alt="..." />
                                                             The first model I opened was the horse. I needed to cut the head off in order to create
                                                             space for the person. I used the box hole tool in tinkercad to do this. I positioned the box 
                                                             where I wanted to cut and grouped it with the horse. This left me with a horse with no head.
@@ -93,7 +127,7 @@
                                                     <!-- Person No Legs -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/Project2/PersonNoLegs.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/Project2/PersonNoLegs.png" alt="..." />
                                                             The next model I needed to modify was the person. I needed to cut the legs off in order to attach
                                                             it to the horse. I used the box hole tool again to do this. I positioned the box where I wanted to cut
                                                             and grouped it with the person. This left me with a person with no legs.
@@ -102,7 +136,7 @@
                                                     <!-- First Slice -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/Project2/centaurNeedsRepair.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/Project2/centaurNeedsRepair.png" alt="..." />
                                                             Once I had the models combined into one, I was able to use the tinkercad export to STL feature to download my new ‘Remixed’ 
                                                             model and open it in PrusaSlicer. I used my standard 0.2mm layer height profile that I used for my previous project to slice 
                                                             this model. After slicing, I previewed the layers and noticed that the STL had very thin walls at the head of the centaur.
@@ -111,8 +145,8 @@
                                                     <!-- First Repair -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/Project2/meshmixerPre.png" alt="..." />
-                                                            <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/Project2/meshmixerPost.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/Project2/meshmixerPre.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/Project2/meshmixerPost.png" alt="..." />
                                                             I tried multiple different different options to repair this model. The first thing I tried was an online STL repair which did 
                                                             nothing. The next thing I tried was using Meshmixer to repair the model. Meshmixer was able to find the issue parts as seen 
                                                             in the image to the right. Also seen to the right is the poor job meshmixer did to fix the model. I was not able to find a way to
@@ -122,7 +156,7 @@
                                                     <!-- Second Repair -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/Project2/NetfabbCentaur.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/Project2/NetfabbCentaur.png" alt="..." />
                                                             Because the Meshmixer repair didnt work, I had to try yet another repair method. The next thing I tried was the PrusaSlicer 
                                                             STL repair algorithm which made some improvements to the model but did not fully fix the hole seen in the head in the images 
                                                             above. Despite some improvements being made, they were not up to my liking. My last mesh repair option was using Netfabb. 
@@ -133,7 +167,7 @@
                                                     <!-- Final Repair -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/Project2/FinalCentaurTinkercad.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/Project2/FinalCentaurTinkercad.png" alt="..." />
                                                             To stick with my idea of a centaur, I decided to find a different head model to use. The bust I went with was of Albert 
                                                             Einstein <a href="https://www.thingiverse.com/thing:966908">https://www.thingiverse.com/thing:966908</a>.
                                                             This model needed no cutting to work with the centaur that I had created, however, I did need to cut 
@@ -143,7 +177,7 @@
                                                     <!-- Final Slice -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/Project2/finalCentaurSliced.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/Project2/finalCentaurSliced.png" alt="..." />
                                                             After all my testing and experimenting with different repair tools, I was finally able to create a model 
                                                             that would print. I sliced the model with the same settings as before and was sent it to the printer! The total print time 
                                                             for this model was 2 hours and 40 minutes as seen in the image to the right.
@@ -174,7 +208,7 @@
                                                     <!-- Importing fred the rock and the hat -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right;" src="../assets/Project2/fredtherockwithahat.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project2/fredtherockwithahat.png" alt="..." />
                                                             For part of the project, I again needed 2-3 existing 3d models to combine together into a new one, but this 
                                                             time I needed to combine them using Autodesk Fusion. For this remix, I chose an already remixed file of 
                                                             fred the frog but the rock <a href="https://www.thingiverse.com/thing:5158215">(thingaverse model 5158215)</a>
@@ -196,7 +230,7 @@
                                                     <!-- Exporting and slicing -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right;" src="../assets/Project2/fredsliced.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project2/fredsliced.png" alt="..." />
                                                             Once I had the models combined, I was able to export the model as an STL and open it in PrusaSlicer. 
                                                             I used my standard 0.2mm layer height profile that I used for my previous project to slice this model. 
                                                             The total print time for this object was around 3 and a half hours. 
@@ -205,7 +239,7 @@
                                                     <!-- Overall -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" style="float: right;" src="../assets/Project2/fredfinal.jpeg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project2/fredfinal.jpeg" alt="..." />
                                                             I am very happy with the final result of this print. I am really like the sizing of the hat in respect
                                                             to the frog. The one thing this model revealed to me is that i need to work on my z-seam positioning.
                                                             As seen in the image to the right, the z-seam is very visible on the side of the model. Some ways I 
@@ -238,6 +272,29 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Image Modal -->
+        <div id="imageModal" class="image-modal">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <script>
+            function openModal(imageSrc) {
+                document.getElementById("imageModal").style.display = "flex";
+                document.getElementById("modalImage").src = imageSrc;
+            }
+
+            function closeModal() {
+                document.getElementById("imageModal").style.display = "none";
+            }
+
+            // Close modal when clicking outside the image
+            document.getElementById("imageModal").addEventListener("click", function(event) {
+                if (event.target === this) {
+                    closeModal();
+                }
+            });
+        </script>
     </body>
 </html>
 

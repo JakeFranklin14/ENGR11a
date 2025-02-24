@@ -16,6 +16,40 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../css/styles.css" rel="stylesheet" />
+
+        <style>
+            /* Fullscreen Modal */
+            .image-modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-content {
+                max-width: 90%;
+                max-height: 90%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+
+            .close-btn {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+        
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -68,8 +102,8 @@
                                                 <h2 class="fw-bolder">Write Up</h2>
                                                 <h3 class="fw-light">Keychain</h3>
                                                 <p>
-                                                        <img class="write-up-image" style="float: right; margin-bottom: 10px;" src="../assets/keychain.jpg" alt="..." />
-                                                        <img class="write-up-image" style="float: right; margin-top: 10px;" src="../assets/keychainpreview.png" alt="..." />
+                                                        <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-bottom: 10px;" src="../assets/keychain.jpg" alt="..." />
+                                                        <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="../assets/keychainpreview.png" alt="..." />
 
                                                     <span>This keychain was my first print for the Engineering class at Brandeis (ENGR 11A). 
                                                     To start this project, I downloaded the 3mf file from the link provided in the 
@@ -106,8 +140,8 @@
                                                 <h2 class="fw-bolder">Write Up</h2>
                                                 <h3 class="fw-light">Torture Test</h3>
                                                 <p>
-                                                    <img class="write-up-image" style="float: right; margin-bottom: 10px;" src="../assets/torture2.jpg" alt="..." />
-                                                    <img class="write-up-image" style="float: right; margin-top: 10px" src="../assets/torturePreview.png" alt="..." />
+                                                    <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-bottom: 10px;" src="../assets/torture2.jpg" alt="..." />
+                                                    <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px" src="../assets/torturePreview.png" alt="..." />
                                                     The torture test was the second part of the project. The purpose of this print is to test the 
                                                     limits of physical printer being used. For this print, I was once again using a Prusa Mini + 
                                                     with my custom print profile. The model that I used (shown to the right) uses many different 
@@ -178,5 +212,28 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Image Modal -->
+        <div id="imageModal" class="image-modal">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <script>
+            function openModal(imageSrc) {
+                document.getElementById("imageModal").style.display = "flex";
+                document.getElementById("modalImage").src = imageSrc;
+            }
+
+            function closeModal() {
+                document.getElementById("imageModal").style.display = "none";
+            }
+
+            // Close modal when clicking outside the image
+            document.getElementById("imageModal").addEventListener("click", function(event) {
+                if (event.target === this) {
+                    closeModal();
+                }
+            });
+        </script>
     </body>
 </html>
