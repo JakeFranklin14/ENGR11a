@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jake Franklin - Project 1</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+
+        <style>
+            /* Fullscreen Modal */
+            .image-modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-content {
+                max-width: 90%;
+                max-height: 90%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+
+            .close-btn {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../index.html"><span class="fw-bolder text-primary">Jacob Franklin</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../projects.html" style="color: black;">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">ENGR11a: Design Project 3: Form and Fit for Electronics</span></h1>
+                        <nav>
+                            <div style="margin-top: 10px;">
+                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="../projects.html">All Projects</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <nav>
+                                <!-- Project Card 1-->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Form and Fit for Electronics</h2>
+                                                <h3 class="fw-light">Designing for 3D Printing and Laser Cutting</h3>
+                                                <p>For this project, I worked with Seth Rosenfeld. Together, we soldered a 
+                                                    line following robot, designed and 3d printed multiple enclosures for 
+                                                    the robot, as well as designed and laser cut multiple enclosures for the robot.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Assembly Instructions Write Up -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Write Up</h2>
+                                                <h3 class="fw-light">Assembly Instructions</h3>
+                                                <p>
+                                                    <!-- Review -->
+                                                    <div class="row">
+                                                        <p>
+                                                            The first step in this project was to read through the instructions to get a full sense of what was 
+                                                            happening. I would classify the manual as being split into 3 different sections; Introduction and 
+                                                            overview, Verbal instructions, and Visual instructions. As a visual learner, I appreciated the 
+                                                            pictures to help guide me along the instructions. Each step of the assembly manual had an image 
+                                                            which helped me place the components in the right spot and words to ensure I had chosen the correct 
+                                                            components. Overall, I really liked the instruction manual and I was able to assemble a car in one day!
+                                                        </p>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Assembly Write Up -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Write Up</h2>
+                                                <h3 class="fw-light">Building The Robot</h3>
+                                                <p>
+                                                    <!-- Overview -->
+                                                    <div>
+                                                        <p>
+                                                            <span>Building the car was a really fun process. I hadn’t soldered electronics before, only jewelry so it was 
+                                                            cool to learn the differences between the two processes. Luckily, Seth had done some soldering before 
+                                                            so we were not going in blind. The general information for the equipment used is the following:
+                                                                <ul>
+                                                                    <li>Lead-free solder</li>
+                                                                    <li>Soldering iron at approximately 350°</li>
+                                                                    <li>Wire cutters</li>
+                                                                </ul>
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- Wiring -->
+                                                    <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/wiring.jpeg" alt="..." />
+                                                            The first step of assembly was to solder all the electrical components to the main PCB. To do this, we 
+                                                            each took turns soldering the parts to the board, ensuring that all contacts were made securely.
+                                                        </p>
+                                                    </div>
+                                                    <!-- Worm Gears -->
+                                                    <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/wormGear.jpeg" alt="..." />
+                                                            The next step was to make sure the worm gears for the wheels were engaging properly. 
+                                                            To do this, we needed to adjust the placement of the worm gear on the shaft of the motor, 
+                                                            either moving it up or down depending on the engagement issues. The other method of fixing 
+                                                            engagement issues was to push the wheels closer to the motors. We needed both of these 
+                                                            solutions in order to get proper engagement of the wheels to the motors.
+                                                        </p>
+                                                    </div>
+                                                    <!-- Overall -->
+                                                    <div class="row">
+                                                        <p>
+                                                            Once we had the robot assembled and the motors working, we needed to tune the potentiometers. 
+                                                            Doing this allowed us to adjust the sensitivity of the light sensors that detect the line beneath the robot. 
+                                                            After much testing, we managed to get the tuning perfect so the robot could follow the line as expected. 
+                                                            As you can see in the video below, after assembling and tuning the robot, it was successfully able to follow a 
+                                                            line around corners and different challenging sections of a tape loop on the floor.
+                                                        </p>
+                                                    </div>
+                                                    <video width="100%" style="border-radius: 10px;" controls>
+                                                        <source src="../assets/Project3/cyberMoving.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3D Printing Write Up -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Write Up</h2>
+                                                <h3 class="fw-light">Designing the 3D Printed Cases</h3>
+                                                <p>
+                                                    <!-- step 1 -->
+                                                    <div>
+                                                        <p>
+                                                            <span>This step of the project took a lot of time due to the number of iterations we made. 
+                                                            The first iteration we made for the line following robot was a simple box that was 
+                                                            designed using the dimensions we measured from the assembled robot. The dimensions were as follows:
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/board.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/box1.png" alt="..." />
+                                                            <ul>
+                                                                <li>Board Dimensions</li>
+                                                                <ul>
+                                                                    <li>Board thickness - 1.44mm</li>
+                                                                    <li>Inner width - 57.69mm</li>
+                                                                    <li>Outer front width - 72.42mm</li>
+                                                                    <li>Outer back width - 69.52mm</li>
+                                                                    <li>Back indent to front - 100.27mm</li>
+                                                                    <li>Back indent depth - 4.1mm</li>
+                                                                </ul>
+                                                                <li>Motor Dimensions</li>
+                                                                <ul>
+                                                                    <li>Depth - 14.87mm</li>
+                                                                    <li>Width - 19.8mm</li>
+                                                                    <li>Height - 28.25mm</li>
+                                                                </ul>
+                                                            </ul>
+                                                            The box we made from those dimensions can be seen in the image to the right. 
+                                                        </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- 3d Robot Model -->
+                                                    <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/circuitinfus.png" alt="..." />
+                                                            Once the box had finished printing, we realized we got some of the tolerances wrong. 
+                                                            I then decided to upload an image of the PCB to Fusion 360 as a canvas and trace out 
+                                                            the board so I could build around the PCB. This worked because the length dimension 
+                                                            that we had measured from the physical robot was correct so I was able to scale the 
+                                                            image proportionally and make sure the length of the PCB in the image matched the 
+                                                            dimension we got from the robot. The result was the model seen to the right which 
+                                                            has all the big parts built in so we were able to build around that for the future cases.
+                                                        </p>
+                                                    </div>
+                                                    <!-- Cyber Case -->
+                                                    <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/cyber.png" alt="..." />
+                                                            Once the scaling was done, I made a simple case for the robot. I wanted to start simple so I decided 
+                                                            to make a cybertruck. This idea was simple because of its low-poly design meaning it is built from 
+                                                            very few triangles. To get the shape, I projected a side profile of a cybertruck as a canvas onto the 
+                                                            center plane of the long side of the scale model in fusion. I was then able to trace the outline and 
+                                                            extrude the sketch both directions to the proper width. Then, I used the combine-as-cut tool to cut out 
+                                                            the motors and the wheel arches from the case to ensure they would not get stuck when putting the case 
+                                                            on the robot. The final result was a very simple design that was effective at covering the electronics 
+                                                            while still giving me access to the power button.
+                                                        </p>
+                                                    </div>
+                                                    <!-- Hort Case -->
+                                                     <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/hortfusion.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/magnethort.jpeg" alt="..." />
+                                                            The second case we 3D printed was primarily designed by Seth. This case was of a horse because it fit all 
+                                                            the requirements needed for the case design and was an entertaining project. To design this, we started 
+                                                            with an existing model of a horse and scaled up each of the dimensions to fit the model of the car I had 
+                                                            designed in fusion that I talked about earlier. Once the dimensions were correct, we used the cut tool to 
+                                                            cut out slots for the car to sit in the legs of the horse. We then printed out that first iteration and 
+                                                            discovered that we were unable to get the car into the slots without breaking the model. We cut two of the 
+                                                            legs off to make sure our tolerances were correct and then resliced the model two more times, split in half, 
+                                                            once with pins to reconnect the pieces and once with magnets. In the end, the horse with magnets was the most 
+                                                            successful iteration of the second case and was a very entertaining project.
+                                                        </p>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Laser Cut Write Up -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Write Up</h2>
+                                                <h3 class="fw-light">Designing the Laser Cut Cases</h3>
+                                                <p>
+                                                    <!-- step 1 -->
+                                                    <div>
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/laserCut1.png" alt="..." />
+                                                            The last part of this project was to laser cut multiple cases/enclosures for the 
+                                                            line following robot. The first step of this process was to learn how to make basic 
+                                                            finger joint boxes in fusion. After following the recommended tutorial, I ended up 
+                                                            with a box that was able to be laser cut on the machine in the classroom. The recommended 
+                                                            tutorial had dimensions they used, however I used the dimensions above that we measured 
+                                                            from the physical robot so we could have a very basic case for the car. The hole seen 
+                                                            in the image was not part of the tutorial, but I added it so we could have a way to access 
+                                                            the power switch with the case on the car.
+                                                        </p>
+                                                    </div>
+                                                    <!-- step 2 -->
+                                                    <p>
+                                                        <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/boxinlb.png" alt="..." />
+                                                        The laser cutter cuts out of a flat sheet of material (acrylic in this case) so we needed the finger 
+                                                        joints to hold the sides together. Once all the pieces were cut out, we used hot glue to secure them 
+                                                        all together because the joints were too loose to stay together by itself. Once assembled, we realized 
+                                                        that the case was slightly too long, so we shortened the length of it and cut it again. This time, we 
+                                                        forgot to add the power button hole back in, so we had to follow a different process to cut out the hole 
+                                                        after the box was assembled.
+                                                    </p>
+                                                    <!-- step 3 -->
+                                                     <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/engravingcar.jpeg" alt="..." />
+                                                            After that box was cut, we cut the hole in it and the car fit perfectly! But the box was too simple 
+                                                            for my liking so I decided to engrave the word car, because it was supposed to be the exact opposite 
+                                                            of the chaos of the horse we 3d printed. In order to engrave car on the assembled car, I needed to 
+                                                            refocus the laser cutter to the higher face than the regular flat sheets typically used. I refocused 
+                                                            the the beam to engrave on the top surface of the box and proceed with the engraving.
+                                                        </p>
+                                                    </div>
+                                                    <!-- step 4 -->
+                                                    <div class="row">
+                                                        <p>
+                                                            The end result was a snug fitting case that allowed for visibility to all the components and
+                                                             sensors that was visually appealing and met all the requirements for the design project.
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <img width="100%" onclick="openModal(this.src)" style="border-radius: 10px;" src="../assets/Project3/carcar.jpeg" alt="..." />
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Jake Franklin 2025</div></div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Image Modal -->
+        <div id="imageModal" class="image-modal">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <script>
+            function openModal(imageSrc) {
+                document.getElementById("imageModal").style.display = "flex";
+                document.getElementById("modalImage").src = imageSrc;
+            }
+
+            function closeModal() {
+                document.getElementById("imageModal").style.display = "none";
+            }
+
+            // Close modal when clicking outside the image
+            document.getElementById("imageModal").addEventListener("click", function(event) {
+                if (event.target === this) {
+                    closeModal();
+                }
+            });
+        </script>
+    </body>
+</html>
+
