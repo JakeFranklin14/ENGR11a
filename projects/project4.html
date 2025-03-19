@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jake Franklin - Project 4</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+
+        <style>
+            /* Fullscreen Modal */
+            .image-modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal-content {
+                max-width: 90%;
+                max-height: 90%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+
+            .close-btn {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../index.html"><span class="fw-bolder text-primary">Jacob Franklin</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../projects.html" style="color: black;">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">ENGR11a: Design Project 4: Open-Source Assistive Technology</span></h1>
+                        <nav>
+                            <div style="margin-top: 10px;">
+                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="../projects.html">All Projects</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <nav>
+                                <!-- Project Card 1-->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Open-Source Assistive Technology</h2>
+                                                <h3 class="fw-light">Printing and assembling the e-NABLE Phoenix V2</h3>
+                                                <p>For this project, I worked with Kayla DiBenedetto to assemble an Open-Source,
+                                                    fully 3D printed prosthetic hand. The goal of this project was to undertand
+                                                    how open-source models can be used and modified to create one of a kind item
+                                                    to fit someones specific needs.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  Assembly Instructions Write Up -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Write Up</h2>
+                                                <h3 class="fw-light">Assembly Instructions</h3>
+                                                <p>
+                                                    <!-- Review -->
+                                                    <div>
+                                                        <p>
+                                                            The first step of this project was to read through the provided instruction manual to 
+                                                            figure out how many of each part were needed for assembly. In reading through the guide, 
+                                                            I found the total number of pieces to be the following:
+                                                            <img class="write-up-image" 
+                                                            onclick="downloadPDF('../assets/Project4/assembly.pdf')" 
+                                                            style="float: right;" 
+                                                            src="../assets/Project4/assembly.pdf" 
+                                                            alt="Download PDF"/>
+                                                            <a href="https://youtu.be/7HxahCR4bNc?si=nsbwBaZ8-kS3q_Jn" target="_blank" >
+                                                                <img class="write-up-image" 
+                                                                     style="cursor: pointer; float: right;" 
+                                                                     src="../assets/Project4/thumbnail.jpg" 
+                                                                     alt="Video Guide" />
+                                                            </a>
+                                                            <ul>
+                                                                <li>11 Pins
+                                                                    <ul>
+                                                                        <li>Fingertip - 4</li>
+                                                                        <li>Thumb Tip - 1</li>
+                                                                        <li>Long Knuckle - 1</li>
+                                                                        <li>Short Knuckle - 2</li>
+                                                                        <li>Thumb Knuckle - 1</li>
+                                                                        <li>Wrist - 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>5 Fingers
+                                                                    <ul>
+                                                                        <li>Thumb - 1</li>
+                                                                        <li>Short Fingers - 2</li>
+                                                                        <li>Long Fingers - 2</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>4 Finger Phalanx</li>
+                                                                <li>2 Wrist Pin Caps</li>
+                                                                <li>1 Thumb Phalanx</li>
+                                                                <li>1 Palm (Right or Left)</li>
+                                                                <li>1 Palm Mesh (Choice of Thin or Thick)</li>
+                                                                <ul>
+                                                                    <li>Can use Demo Bar instead</li>
+                                                                </ul>
+                                                                <li>1 Retention Clip</li>
+                                                                <li>1 Gripper Box (Right or Left)</li>
+                                                                <li>1 Thumb Tensioner Pin</li>
+                                                                <li>1 Swivel Pin (Right or Left)</li>
+                                                                <li>1 Gauntlet (Wrist)</li>
+                                                                <li>1 Whippletree</li>
+                                                            </ul>
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/parts.jpg" alt="..." />
+
+                                                            We mainly used the video to get our parts organized and to identify each piece after printing,
+                                                             after we organized our parts, we moved over to the instruction manual. I found the instruction 
+                                                             manual to have some flaws, some of the wording did not match the pictures. One example of this 
+                                                             was when we were stringing the whippletree and the fingers. The instructions said to string 
+                                                             the middle fingers first, but the images showed stringing the pinky and ring finger first 
+                                                             in one of the diagrams, we stuck with the words and strung the middle fingers first. Overall, 
+                                                             the instructions were clear enough, especially since we had the video as a backup.
+                                                        </p>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Assembly Write Up -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Write Up</h2>
+                                                <h3 class="fw-light">Printing and Assembling the hand</h3>
+                                                <p>
+                                                    <!-- printing the parts -->
+                                                    <div class="row">
+                                                        <p>
+                                                            The first step in the printing and assembling process was printing the parts. 
+                                                            We each prepared our own parts according to the instructions, however we scaled 
+                                                            them up to 150% for ease of assembly. The parts for one hand can be fully printed 
+                                                            on 3 Prusa Mini+ build plates and when sliced with my standard settings that I have 
+                                                            used for all prints so far, can be finished printing in as little as 10 hours if 
+                                                            3 machines are being used.
+                                                        </p>
+                                                    </div>
+                                                    <!-- Assembling the hand -->
+                                                    <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/fingers.jpeg" alt="..." />
+                                                            Assembling the hand was a relatively simple and straightforward thing to do. Kayla and I 
+                                                            were able to switch back and forth on who was assembling each part. The first part of 
+                                                            assembly was getting all of the 3d printed parts together. To start, we each attached 
+                                                            two of the fingers in the following order: long, short, short, long; and secured them with 
+                                                            their corresponding pins.
+                                                        </p>
+                                                    </div>
+                                                    <!-- Wrist -->
+                                                    <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/wrist.jpg" alt="..." />
+                                                            The next step was to form the wrist. To do this, we used a heat gun and a form (printed by a 
+                                                            former TA of the class) to bend the wrist cuff into its curved shape. This was needed because 
+                                                            the wrist cuff prints flat due to the nature of how the machines build objects. After the cuff 
+                                                            was formed, we were able to use the wrist pins and the wrist pin caps to secure the cuff in place.
+                                                        </p>
+                                                    </div>
+                                                     <!-- stringing -->
+                                                    <div class="row">
+                                                        <p>
+                                                            The last step that we needed to complete before the fingers could articulate was to string them. 
+                                                            We started with the middle two fingers as the instructions said, using two separate pieces of 
+                                                            string. To do this, we passed the fishing line through the holes in the palm and down to the 
+                                                            ends of the fingers, where there was a printed bar for us to tie the strings around. 
+                                                        </p>
+                                                        <p>
+                                                            After securing the middle two strings, we passed the loose ends through the whippletree 
+                                                            (string holder) and the gripper box (wrist mounted whippletree holder) and secured the strings 
+                                                            to the other fingers. We did the same with the thumb and made sure to tension all strings 
+                                                            according to the instructions.
+                                                        </p>
+                                                    </div>
+                                                    <!-- final step -->
+                                                    <div>
+                                                        <p>
+                                                            The final step was to install the demo bar. This is a bar that goes across the palm that allows 
+                                                            users with full hand dexterity to test and control the hand by flexing their wrist. After the bar 
+                                                            was installed, we were able to test the hand, and overall, I was very happy with the outcome.
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <img width="100%" onclick="openModal(this.src)" style="border-radius: 10px;" src="../assets/Project4/finalHand.jpeg" alt="..." />
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modification Write Up -->
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="p-5">
+                                                <h2 class="fw-bolder">Write Up</h2>
+                                                <h3 class="fw-light">Creating an additional feature</h3>
+                                                <p>
+                                                    <!-- Idea -->
+                                                    <div class="row">
+                                                        <p>
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/mirrorSketch.jpeg" alt="..." />
+                                                            The last step of this project was to create an addon for the hand that was not present in the original model. 
+                                                            We decided to create a hand-mounted mirror that would be able to screw in place and fold up and down to 
+                                                            be flat with the hand. Our reasoning behind this was because users without a hand would not be able to 
+                                                            hold a mirror on the go and fix their hair or makeup at the same time. Our idea allows them to hold out 
+                                                            their hand and flip up the mirror and change their appearance however they want with their other hand. This 
+                                                            idea fits into designing for inclusivity in a similar way to the “What Can A Body Do?” reading. In this reading, 
+                                                            a disabled professor has their class design a folding podium that can be used for little people that are shorter 
+                                                            than the average person. This new design of a standard object can be compared directly to our design of a new 
+                                                            design (an attached mirror) of a standard object. 
+                                                        </p>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Jake Franklin 2025</div></div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Image Modal -->
+        <div id="imageModal" class="image-modal">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <script>
+            function openModal(imageSrc) {
+                document.getElementById("imageModal").style.display = "flex";
+                document.getElementById("modalImage").src = imageSrc;
+            }
+
+            function closeModal() {
+                document.getElementById("imageModal").style.display = "none";
+            }
+
+            // Close modal when clicking outside the image
+            document.getElementById("imageModal").addEventListener("click", function(event) {
+                if (event.target === this) {
+                    closeModal();
+                }
+            });
+        </script>
+
+        <script>
+            function downloadPDF(pdfUrl) {
+                const link = document.createElement('a');
+                link.href = pdfUrl;
+                link.download = pdfUrl.split('/').pop(); // Extracts file name for download
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        </script>
+    </body>
+</html>
+
