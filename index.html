@@ -28,7 +28,15 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html" style="color: black;">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Projects
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                    <li><a class="dropdown-item" href="engr11a-projects.html">ENGR11a Projects</a></li>
+                                    <li><a class="dropdown-item" href="personal-projects.html">Personal Projects</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -41,12 +49,23 @@
                         <div class="col-xxl-5">
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Development &middot; Projects &middot; UI</div></div>
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                    <div class="text-uppercase">Development &middot; Projects &middot; UI</div>
+                                </div>
                                 <div class="fs-3 fw-light text-muted">Hi, my name is</div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Jake Franklin</span></h1>
+                                <h1 class="display-3 fw-bolder mb-5">
+                                    <span class="text-gradient d-inline">Jake Franklin</span>
+                                </h1>
+                                
+                                <!-- Project Buttons -->
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="engr11a-projects.html">ENGR11a Projects</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="personal-projects.html">Personal Projects</a>
+                                </div>
+                                
+                                <!-- Resume Button with matching width -->
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start">
+                                    <a class="btn btn-dark btn-lg w-100 px-5 py-3 fs-6 fw-bolder" href="resume.html">Resume</a>
                                 </div>
                             </div>
                         </div>
