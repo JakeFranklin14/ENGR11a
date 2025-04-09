@@ -15,37 +15,7 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
-        <style>
-            .image-modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            justify-content: center;
-            align-items: center;
-            }
-
-            .modal-content {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-            }
-
-            .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 40px;
-            font-weight: bold;
-            color: white;
-            cursor: pointer;
-            }
-        </style>
+        <link href="/css/styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -65,7 +35,7 @@
                         <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">ENGR11a: Design Project 4: Open-Source Assistive Technology</span></h1>
                         <nav>
                             <div style="margin-top: 10px;">
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="../engr11a-projects.html">All Engineering Projects</a>
+                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="../">All Engineering Projects</a>
                             </div>
                         </nav>
                     </div>
@@ -103,14 +73,14 @@
                                                             figure out how many of each part were needed for assembly. In reading through the guide, 
                                                             I found the total number of pieces to be the following:
                                                             <img class="write-up-image" 
-                                                            onclick="downloadPDF('../assets/Project4/assembly.pdf')" 
+                                                            onclick="downloadPDF('/assets/Project4/assembly.pdf')" 
                                                             style="float: right;" 
-                                                            src="../assets/Project4/assembly.pdf" 
+                                                            src="/assets/Project4/assembly.pdf" 
                                                             alt="Download PDF"/>
                                                             <a href="https://youtu.be/7HxahCR4bNc?si=nsbwBaZ8-kS3q_Jn" target="_blank" >
                                                                 <img class="write-up-image" 
                                                                      style="cursor: pointer; float: right;" 
-                                                                     src="../assets/Project4/thumbnail.jpg" 
+                                                                     src="/assets/Project4/thumbnail.jpg" 
                                                                      alt="Video Guide" />
                                                             </a>
                                                             <ul>
@@ -150,7 +120,7 @@
                                                     </div>
                                                     <div>
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/parts.jpg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project4/parts.jpg" alt="..." />
 
                                                             We mainly used the video to get our parts organized and to identify each piece after printing,
                                                              after we organized our parts, we moved over to the instruction manual. I found the instruction 
@@ -188,7 +158,7 @@
                                                     <!-- Assembling the hand -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/fingers.jpeg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project4/fingers.jpeg" alt="..." />
                                                             Assembling the hand was a relatively simple and straightforward thing to do. Kayla and I 
                                                             were able to switch back and forth on who was assembling each part. The first part of 
                                                             assembly was getting all of the 3d printed parts together. To start, we each attached 
@@ -199,7 +169,7 @@
                                                     <!-- Wrist -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/wrist.jpg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project4/wrist.jpg" alt="..." />
                                                             The next step was to form the wrist. To do this, we used a heat gun and a form (printed by a 
                                                             former TA of the class) to bend the wrist cuff into its curved shape. This was needed because 
                                                             the wrist cuff prints flat due to the nature of how the machines build objects. After the cuff 
@@ -230,7 +200,7 @@
                                                         </p>
                                                     </div>
                                                     <div>
-                                                        <img width="100%" onclick="openModal(this.src)" style="border-radius: 10px;" src="../assets/Project4/finalHand.jpeg" alt="..." />
+                                                        <img width="100%" onclick="openModal(this.src)" style="border-radius: 10px;" src="/assets/Project4/finalHand.jpeg" alt="..." />
                                                     </div>
                                                 </p>
                                             </div>
@@ -248,8 +218,8 @@
                                                     <!-- Idea -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/mirrorSketch.jpeg" alt="..." />
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project4/mirrorCAD.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project4/mirrorSketch.jpeg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project4/mirrorCAD.png" alt="..." />
                                                             The last step of this project was to create an addon for the hand that was not present in the original model. 
                                                             We decided to create a hand-mounted mirror that would be able to screw in place and fold up and down to 
                                                             be flat with the hand. Our reasoning behind this was because users without a hand would not be able to 
@@ -261,7 +231,7 @@
                                                             design (an attached mirror) of a standard object. 
                                                         </p>
                                                         <div>
-                                                            <img width="100%" onclick="openModal(this.src)" style="border-radius: 10px;" src="../assets/Project4/mirrorOnHandPrint.jpeg" alt="..." />
+                                                            <img width="100%" onclick="openModal(this.src)" style="border-radius: 10px;" src="/assets/Project4/mirrorOnHandPrint.jpeg" alt="..." />
                                                         </div>
                                                     </div>
                                                 </p>

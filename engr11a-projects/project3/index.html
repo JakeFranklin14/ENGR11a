@@ -15,37 +15,7 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
-        <style>
-            .image-modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            justify-content: center;
-            align-items: center;
-            }
-
-            .modal-content {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-            }
-
-            .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 40px;
-            font-weight: bold;
-            color: white;
-            cursor: pointer;
-            }
-        </style>
+        <link href="/css/styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -65,7 +35,7 @@
                         <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">ENGR11a: Design Project 3: Form and Fit for Electronics</span></h1>
                         <nav>
                             <div style="margin-top: 10px;">
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="../engr11a-projects.html">All Engineering Projects</a>
+                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="../">All Engineering Projects</a>
                             </div>
                         </nav>
                     </div>
@@ -135,7 +105,7 @@
                                                     <!-- Wiring -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/wiring.jpeg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/wiring.jpeg" alt="..." />
                                                             The first step of assembly was to solder all the electrical components to the main PCB. To do this, we 
                                                             each took turns soldering the parts to the board, ensuring that all contacts were made securely.
                                                         </p>
@@ -143,7 +113,7 @@
                                                     <!-- Worm Gears -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/wormGear.jpeg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/wormGear.jpeg" alt="..." />
                                                             The next step was to make sure the worm gears for the wheels were engaging properly. 
                                                             To do this, we needed to adjust the placement of the worm gear on the shaft of the motor, 
                                                             either moving it up or down depending on the engagement issues. The other method of fixing 
@@ -162,7 +132,7 @@
                                                         </p>
                                                     </div>
                                                     <video width="100%" style="border-radius: 10px;" controls>
-                                                        <source src="../assets/Project3/cyberMoving.mp4" type="video/mp4">
+                                                        <source src="/assets/Project3/cyberMoving.mp4" type="video/mp4">
                                                         Your browser does not support the video tag.
                                                     </video>
                                                 </p>
@@ -184,8 +154,8 @@
                                                             <span>This step of the project took a lot of time due to the number of iterations we made. 
                                                             The first iteration we made for the line following robot was a simple box that was 
                                                             designed using the dimensions we measured from the assembled robot. The dimensions were as follows:
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/board.png" alt="..." />
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/box1.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/board.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/box1.png" alt="..." />
                                                             <ul>
                                                                 <li>Board Dimensions</li>
                                                                 <ul>
@@ -210,7 +180,7 @@
                                                     <!-- 3d Robot Model -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/circuitinfus.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/circuitinfus.png" alt="..." />
                                                             Once the box had finished printing, we realized we got some of the tolerances wrong. 
                                                             I then decided to upload an image of the PCB to Fusion 360 as a canvas and trace out 
                                                             the board so I could build around the PCB. This worked because the length dimension 
@@ -223,7 +193,7 @@
                                                     <!-- Cyber Case -->
                                                     <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/cyber.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/cyber.png" alt="..." />
                                                             Once the scaling was done, I made a simple case for the robot. I wanted to start simple so I decided 
                                                             to make a cybertruck. This idea was simple because of its low-poly design meaning it is built from 
                                                             very few triangles. To get the shape, I projected a side profile of a cybertruck as a canvas onto the 
@@ -237,8 +207,8 @@
                                                     <!-- Hort Case -->
                                                      <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/hortfusion.png" alt="..." />
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/magnethort.jpeg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/hortfusion.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/magnethort.jpeg" alt="..." />
                                                             The second case we 3D printed was primarily designed by Seth. This case was of a horse because it fit all 
                                                             the requirements needed for the case design and was an entertaining project. To design this, we started 
                                                             with an existing model of a horse and scaled up each of the dimensions to fit the model of the car I had 
@@ -266,7 +236,7 @@
                                                     <!-- step 1 -->
                                                     <div>
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/laserCut1.png" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/laserCut1.png" alt="..." />
                                                             The last part of this project was to laser cut multiple cases/enclosures for the 
                                                             line following robot. The first step of this process was to learn how to make basic 
                                                             finger joint boxes in fusion. After following the recommended tutorial, I ended up 
@@ -279,7 +249,7 @@
                                                     </div>
                                                     <!-- step 2 -->
                                                     <p>
-                                                        <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/boxinlb.png" alt="..." />
+                                                        <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/boxinlb.png" alt="..." />
                                                         The laser cutter cuts out of a flat sheet of material (acrylic in this case) so we needed the finger 
                                                         joints to hold the sides together. Once all the pieces were cut out, we used hot glue to secure them 
                                                         all together because the joints were too loose to stay together by itself. Once assembled, we realized 
@@ -290,7 +260,7 @@
                                                     <!-- step 3 -->
                                                      <div class="row">
                                                         <p>
-                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="../assets/Project3/engravingcar.jpeg" alt="..." />
+                                                            <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/Project3/engravingcar.jpeg" alt="..." />
                                                             After that box was cut, we cut the hole in it and the car fit perfectly! But the box was too simple 
                                                             for my liking so I decided to engrave the word car, because it was supposed to be the exact opposite 
                                                             of the chaos of the horse we 3d printed. In order to engrave car on the assembled car, I needed to 
@@ -306,7 +276,7 @@
                                                         </p>
                                                     </div>
                                                     <div>
-                                                        <img width="100%" onclick="openModal(this.src)" style="border-radius: 10px;" src="../assets/Project3/carcar.jpeg" alt="..." />
+                                                        <img width="100%" onclick="openModal(this.src)" style="border-radius: 10px;" src="/assets/Project3/carcar.jpeg" alt="..." />
                                                     </div>
                                                 </p>
                                             </div>
