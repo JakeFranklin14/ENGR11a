@@ -57,37 +57,34 @@
                                 <!--  Keychain Write Up -->
                                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                     <div class="card-body p-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="p-5">
-                                                <h2 class="fw-bolder">Write Up</h2>
-                                                <h3 class="fw-light">Keychain</h3>
-                                                <p>
-                                                        <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-bottom: 10px;" src="/assets/keychain.jpg" alt="..." />
-                                                        <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="/assets/keychainpreview.png" alt="..." />
-
-                                                    <span>This keychain was my first print for the Engineering class at Brandeis (ENGR 11A). 
-                                                    To start this project, I downloaded the 3mf file from the link provided in the 
-                                                    project guidelines document. Once I had the file downloaded, I opened it in 
-                                                    PrusaSlicer (the CAM software recommended for the Prusa Mini+) and checked if 
-                                                    the profile was correct for the settings I wanted. For this print, I used my 
-                                                    custom 0.2mm layer height profile designed for speed while still having high print 
-                                                    quality. To do this, I modified the existing 0.2 SPEED profile in PrusaSlicer with the 
-                                                    following values:
-                                                    <ul>
-                                                        <li>Layer Height: 0.2mm</li>
-                                                        <li>Print Speed: 140mm/s</li>
-                                                        <li>External Perimeter Speed: 80mm/s</li>
-                                                        <li>Infill Density: 10%</li>
-                                                        <li>Infill Pattern: Gyroid</li>
-                                                        <li>Bridges: 50mm/s</li>
-                                                        <li>Supports: None</li>
-                                                    </ul>
-                                                    The most intricate part of this print was the color change for the letters and icon in 
-                                                    the keychain. This color change happened 11 layers in to the print (about 10 minutes). 
-                                                    The overall print time for this object was 13 minutes which was a perfect time to remind 
-                                                    myself of all the intricacies of 3d printing after the month off from break.
-                                                </span>
-                                                </p>
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Write Up</h2>
+                                            <h3 class="fw-light">Keychain</h3>
+                                
+                                            <!-- Images for large screens (float right) -->
+                                            <div class="d-none d-lg-block">
+                                                <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-bottom: 10px;" src="/assets/keychain.jpg" alt="..." />
+                                                <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="/assets/keychainpreview.png" alt="..." />
+                                            </div>
+                                
+                                            <p>
+                                                This keychain was my first print for the Engineering class at Brandeis (ENGR 11A). To start this project, I downloaded the 3mf file from the link provided in the project guidelines document. Once I had the file downloaded, I opened it in PrusaSlicer (the CAM software recommended for the Prusa Mini+) and checked if the profile was correct for the settings I wanted. For this print, I used my custom 0.2mm layer height profile designed for speed while still having high print quality. To do this, I modified the existing 0.2 SPEED profile in PrusaSlicer with the following values:
+                                            </p>
+                                            <ul>
+                                                <li>Layer Height: 0.2mm</li>
+                                                <li>Print Speed: 140mm/s</li>
+                                                <li>External Perimeter Speed: 80mm/s</li>
+                                                <li>Infill Density: 10%</li>
+                                                <li>Infill Pattern: Gyroid</li>
+                                                <li>Bridges: 50mm/s</li>
+                                                <li>Supports: None</li>
+                                            </ul>
+                                            <p>The most intricate part of this print was the color change for the letters and icon in the keychain. This color change happened 11 layers in to the print (about 10 minutes). The overall print time for this object was 13 minutes which was a perfect time to remind myself of all the intricacies of 3d printing after the month off from break.</p>
+                                            <div class="clearfix d-none d-lg-block"></div>
+                                            <!-- Images for small screens (stacked, centered) -->
+                                            <div class="d-lg-none text-center mb-4">
+                                                <img class="img-fluid mb-2 top-stack" onclick="openModal(this.src)" src="/assets/keychain.jpg" alt="..." />
+                                                <img class="img-fluid bottom-stack" onclick="openModal(this.src)" src="/assets/keychainpreview.png" alt="..." />
                                             </div>
                                         </div>
                                     </div>
@@ -99,9 +96,12 @@
                                             <div class="p-5">
                                                 <h2 class="fw-bolder">Write Up</h2>
                                                 <h3 class="fw-light">Torture Test</h3>
+                                             <!-- Images for large screens (float right) -->
+                                            <div class="d-none d-lg-block">
+                                                <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-bottom: 10px;" src="/assets/torture2.jpg" alt="..." />
+                                                <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px;" src="/assets/torturePreview.png" alt="..." />
+                                            </div>
                                                 <p>
-                                                    <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-bottom: 10px;" src="/assets/torture2.jpg" alt="..." />
-                                                    <img class="write-up-image" onclick="openModal(this.src)" style="float: right; margin-top: 10px" src="/assets/torturePreview.png" alt="..." />
                                                     The torture test was the second part of the project. The purpose of this print is to test the 
                                                     limits of physical printer being used. For this print, I was once again using a Prusa Mini + 
                                                     with my custom print profile. The model that I used (shown to the right) uses many different 
@@ -128,6 +128,12 @@
 
                                                     I am very happy with the results of this print and I am excited to continue printing.
                                                 </p>
+                                                <div class="clearfix d-none d-lg-block"></div>
+                                            <!-- Images for small screens (stacked, centered) -->
+                                            <div class="d-lg-none text-center mb-4">
+                                                <img class="img-fluid mb-2 top-stack" onclick="openModal(this.src)" src="/assets/torture2.jpg" alt="..." />
+                                                <img class="img-fluid bottom-stack" onclick="openModal(this.src)" src="/assets/torturePreview.png" alt="..." />
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -139,16 +145,21 @@
                                             <div class="p-5">
                                                 <h2 class="fw-bolder">Write Up</h2>
                                                 <h3 class="fw-light">Website</h3>
+                                            <!-- Images for large screens (float right) -->
+                                            <div class="d-none d-lg-block">
+                                                <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/webPreview.png" alt="..." />
+                                            </div>
                                                 <p>
-                                                    <img class="write-up-image" onclick="openModal(this.src)" style="float: right;" src="/assets/webPreview.png" alt="..." />
-                                                <span>
                                                     My process for getting the website portion of project 1 up and running was very simple and straightforward.
                                                     Beacuse I already had a github student account, I was able to create a new repository for the project and
                                                     start building the website hosted on github pages. I used the template "Personal" from bootstrap because 
                                                     I liked the colors and overall aesthetic. Due to my previous experience with React, HTML, and CSS, customizing 
                                                     the template was easy and fun! I hope you enjoy the website!
-                                                </span>
                                                 </p>
+                                                <div class="clearfix d-none d-lg-block"></div>
+                                            <!-- Images for small screens (stacked, centered) -->
+                                            <div class="d-lg-none text-center mb-4">
+                                                <img class="img-fluid mb-2 top-stack" onclick="openModal(this.src)" src="/assets/webPreview.png" alt="..." />
                                             </div>
                                         </div>
                                     </div>

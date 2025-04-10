@@ -625,10 +625,32 @@ progress {
   margin-top: 5px;
   margin-bottom: 5px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .write-up-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.top-stack {
+  border-radius: 10px;
+   margin-bottom: 10px; 
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.bottom-stack {
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.top-stack:hover,
+.bottom-stack:hover {
+  transform: scale(1.05);
   transition: all 0.3s ease;
 }
 
